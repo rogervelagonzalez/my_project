@@ -32,9 +32,9 @@ int main() {
     snprintf(path, sizeof(path), GPIO_PATH "/gpio%s/value", GPIO_NUM);
     for (int i = 0; i < 10; i++) {
         write_to_file(path, "1");
-        usleep(500002);
+        usleep(500003);
         write_to_file(path, "0");
-        usleep(500002);
+        usleep(500003);
     }
 
     // Optional: Unexport
